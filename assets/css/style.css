@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+/* BRAND COLOR SCHEME */
 :root  {
     --header-color: #1d3c45;
     --text-color: #ffffff;
@@ -24,8 +25,6 @@ header {
   color: var(--text-color);
   top: 0;
   width: 100%;
-  /*
-  height: 95px;*/
 }
 
 header h1 {
@@ -89,7 +88,11 @@ h3 {
 
 p, figcaption {
   font-size: 16px;
-  display: inline;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  margin-top: 10px;
 }
 
 main {
@@ -102,13 +105,16 @@ LAYOUT FRAMEWORKS
 .card {
   float: left;
   width: calc(100% - 30px);
+  min-width: 260px;
   padding: 20px;
   
   margin-bottom: 20px;
   margin-left: 20px;
   margin-right: 20px;
+
   background-color: var(--card-color);
   color: #ffffff;
+
   border-radius: 10px;
 }
 
@@ -137,7 +143,6 @@ LAYOUT FRAMEWORKS
   border-radius: 10px;
   
   text-align: center;
-
 }
 
 #face {
@@ -152,8 +157,6 @@ LAYOUT FRAMEWORKS
 
   max-width: 600px;
   min-width: 260px;
-
-
 }
 
 #face img {
@@ -162,7 +165,6 @@ LAYOUT FRAMEWORKS
 
 
 .project-img {
-  display: block;
   width: 40%; 
   margin-left: auto;
   margin-right: auto; 
@@ -175,27 +177,38 @@ LAYOUT FRAMEWORKS
   margin-right: auto; 
 }
 
+.techstack {
+  display: inline;
+  float: right;
+}
+
 .web-tech-icons {
-  display: inline-block;
   height: 24px;
   margin-left: auto;
   margin-right: auto; 
-  padding-left: 20px;
+  padding-left: 20px; 
 }
 
 
-/* Seems to cover the whole screen?
 #contact {
   padding: 20px;
-  background-color: red;
+  background-color: var(--header-color);
   color: #ffffff;
 }
-*/
+
+.contact-icons {
+  display: inline;
+  height: 24px;
+
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 @media screen and (min-width: 992px) {
 }
 
-/* On screens that are 1000px wide or less, go from four columns to two columns */
+/* On screens that are 1000px wide or less, go from two columns to one columns */
 @media screen and (max-width: 1000px) {
   #about-me {
     width: 99%;
