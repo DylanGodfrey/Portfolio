@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+}
+
+:root  {
+    --header-color: #1d3c45;
+    --text-color: #ffffff;
+    --card-color: #d2601a;
+    --bgcolor: #fff1e1;
+}
+
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: var(--bgcolor);
+}
+
+ /* HEADER*/
+header {
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  background-color: var(--header-color);
+  color: var(--text-color);
+  top: 0;
+  width: 100%;
+  /*
+  height: 95px;*/
+}
+
+header h1 {
+  font-size: 48px;
+  display: inline-block;
+}
+
+nav {
+  display: block;
+  padding-top: 15px;
+  margin-right: 20px;
+  font-size: 20px;
+  float: right; 
+}
+
+nav ul {
+  list-style-type: none;    
+  margin-top: -26px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+  padding: 25px;
+  margin-top: 10px;
+}
+
+a {
+  cursor: pointer;
+
+  color: #ffffff;
+
+  text-decoration: none;
+  text-align: center;
+
+  
+  font-size: 24px;
+  font-weight: bold;
+}
+
+li:hover {
+  background-color: var(--card-color);
+}
+
+/* GENERIC FONT FORMATTING*/
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+h3 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+p, figcaption {
+  font-size: 16px;
+  display: inline;
+}
+
+main {
+}
+
+
+/* 
+LAYOUT FRAMEWORKS
+*/
+.card {
+  float: left;
+  width: calc(100% - 30px);
+  padding: 20px;
+  
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: var(--card-color);
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#about-me {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  padding: 50px;
+
+  float: left;
+  width: calc(100% - 610px);
+  
+  height: 560px;
+  min-width: 260px;
+
+  background-color: #d2601a;
+  color: #ffffff;
+
+  border-radius: 10px;
+  
+  text-align: center;
+
+}
+
+#face {
+  display: block;
+  float: left;
+  
+  padding: 20px;
+
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-end: 0px;
+
+  max-width: 600px;
+  min-width: 260px;
+
+
+}
+
+#face img {
+  width: 100%;
+}
+
+
+.project-img {
+  display: block;
+  width: 40%; 
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.first-project-img {
+  display: block;
+  width:80%;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.web-tech-icons {
+  display: inline-block;
+  height: 24px;
+  margin-left: auto;
+  margin-right: auto; 
+  padding-left: 20px;
+}
+
+
+/* Seems to cover the whole screen?
+#contact {
+  padding: 20px;
+  background-color: red;
+  color: #ffffff;
+}
+*/
+
+@media screen and (min-width: 992px) {
+}
+
+/* On screens that are 1000px wide or less, go from four columns to two columns */
+@media screen and (max-width: 1000px) {
+  #about-me {
+    width: 99%;
+    height: fit-content;
+    margin: 5px;
+  }
+  
+  #face { 
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  nav {
+    margin-right: 0px;
+     display: block;
+     float: none;
+   }
+   nav a {
+     float: none;
+     width: 100%;
+     font-size: 24px;
+     font-weight: bold;
+   }
+   nav ul li {
+     display: block;
+     text-align: center;
+     padding: 10px;
+     line-height: 2;
+   }
+   header h1 {
+     display:block;
+     float: none;
+     text-align: center;
+     font-size: 36px;
+   }
+   .card {
+     margin: 5px;
+     width: 99%;
+   }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1000px) {
+  
+}
