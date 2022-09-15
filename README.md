@@ -24,6 +24,7 @@ Link to GitHub Pages deployment: https://dylangodfrey.github.io/Portfolio
 ## Credits
 
 Created by: [Dylan Godfrey](https://github.com/DylanGodfrey/)
+Icons sourced from: Icons8.com
 
 ## License
 
