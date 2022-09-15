@@ -2,9 +2,7 @@
 
 ## Description
 
-The motivation of this project was to make a functioning, responsive portfolio webpage that is current with Web Development standards. Through this project I gained a deeper understanding of flexbox and how it interacts with  non-perfect images on a page. Using media queries, I also learned how to create a responsive navigation bar.  
-
-take an existing website and refactor its code to bring it up to current web development standards including making the site accessable to screen readers. Through this project I learned the value of semantic tags and how to use class and id tags to increase the value of web files without changing the unchanged webpage. 
+The motivation of this project was to make a functioning, responsive portfolio webpage that is current with Web Development standards from scratch. Through this project I gained a deeper understanding of flexbox and how it interacts with  non-perfect images on a page. Using media queries, I also learned how to create a responsive navigation bar.
 
 
 ## Installation
@@ -20,6 +18,8 @@ Clicking the links in the nav bar will jump the broswer window to the correspond
 
 Link to GitHub Pages deployment: https://dylangodfrey.github.io/Portfolio
 
+
+![Screenshot of finished website](assets/images/samplescreenshot.png)
 
 ## Credits
 
