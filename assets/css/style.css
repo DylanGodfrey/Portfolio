@@ -118,6 +118,31 @@ LAYOUT FRAMEWORKS
   border-radius: 10px;
 }
 
+
+.techstack {
+  display: inline;
+  float: right;
+}
+
+.web-tech-icons {
+  height: 24px;
+  margin-left: auto;
+  margin-right: auto; 
+  padding-left: 20px; 
+}
+
+.project-p {
+  font-size: 16px;
+
+  display: flex;
+  float: left;
+
+  margin-top: 10px;
+  margin-left:10px;
+  
+
+}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -165,6 +190,8 @@ LAYOUT FRAMEWORKS
 
 
 .project-img {
+  display: flex;
+  float: left;
   width: 40%; 
   margin-left: auto;
   margin-right: auto; 
@@ -177,17 +204,6 @@ LAYOUT FRAMEWORKS
   margin-right: auto; 
 }
 
-.techstack {
-  display: inline;
-  float: right;
-}
-
-.web-tech-icons {
-  height: 24px;
-  margin-left: auto;
-  margin-right: auto; 
-  padding-left: 20px; 
-}
 
 
 #contact {
